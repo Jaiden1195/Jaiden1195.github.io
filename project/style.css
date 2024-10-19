@@ -1,0 +1,201 @@
+
+body {
+	background-color: lightgrey;
+}
+
+h2 {
+	color: black;
+	text-align: center;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+.planes {
+	max-width: 600px; /* Adjust based on your design */
+	margin: 20px auto; /* Center the subsection */
+	padding: 20px;
+	border: 1px solid #ccc; /* Box border */
+	border-radius: 8px; /* Rounded corners */
+	background-color: #f9f9f9; /* Light background */
+}
+
+ul {
+	text-align: center; /* Centered text */
+	list-style-type: none;
+}
+
+header {
+	background-color: #333; /* Dark background */
+	color: #fff;
+	padding: 20px;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline; /* Combined into one rule */
+	margin-right: 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.hero {
+	text-align: center;
+	padding: 100px 20px;
+	background-color: #f0f0f0;
+}
+
+.hero h1 {
+	font-size: 3em;
+	margin-bottom: 20px;
+}
+
+.hero p {
+	font-size: 1.2em; /* Fixed spacing */
+	margin-bottom: 30px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #333;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px; /* Fixed border-radius declaration */
+	text-align: center; /* Fixed text-align */
+	/* Removed justify-content */
+}
+
+#First {
+	color: black;
+}
+
+#Falcon {
+	text-align: center;
+}
+
+.specs {
+	text-align: left; /* Changed to left since "justify-right" is invalid */
+	max-width: 600px; /* Adjust based on your design */
+	margin: 20px auto; /* Center the subsection */
+	padding: 20px;
+	border: 1px solid #ccc; /* Box border */
+	border-radius: 8px; /* Rounded corners */
+	background-color: #f9f9f9; /* Light background */
+}
+
+.plane-spec {
+	color: black;
+}
+
+#aircraft-image {
+	border-radius: 15px;
+	max-width: 100%;
+	height: auto;
+}
+
+#F1, #B1, #T52 { /* Combined display rules */
+	display: flex;
+	align-items: flex-start;
+}
+
+aside {
+	margin-left: 20px;
+}
+
+form {
+	max-width: 300px;
+	margin: auto;
+	color: white; /* Moved color declaration here */
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+h3 {
+	text-align: center;
+	color: white;
+}
+
+footer {
+	background-color: #333;
+	margin: 0;
+}
+
+#address {
+	color: white;
+}
+
+#AH64 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh; /* Set to fill the viewport height */
+}
+
+.helicopter {
+	max-height: 80%; /* Limit height */
+	max-width: 80%; /* Limit width */
+	height: auto;
+	width: auto;
+}
+
+.sub-section {
+	max-width: 600px; /* Adjust based on your design */
+	margin: 20px auto; /* Center the subsection */
+	padding: 20px;
+	border: 1px solid #ccc; /* Box border */
+	border-radius: 8px; /* Rounded corners */
+	background-color: #f9f9f9; /* Light background */
+}
+
+.morals-content {
+	margin-top: 10px; /* Space between h3 and p */
+	line-height: 1.5; /* Improve readability */
+	/* Text color */
+}
+
+.morals {
+	color: black;
+}
+
+.container {
+	display: flex;
+	flex-direction: row; /* Align items in a row */
+	flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
+	gap: 20px; /* Space between the sections */
+	margin: 20px; /* Margin around the container */
+}
+
+.info {
+	max-width: 600px; /* Adjust based on your design */
+	margin: 20px auto; /* Center the subsection */
+	padding: 20px;
+	border: 1px solid #ccc; /* Box border */
+	border-radius: 8px; /* Rounded corners */
+	background-color: #f9f9f9; /* Light background */
+}
+
+.what-we-do {
+	max-width: 600px; /* Adjust based on your design */
+	margin: 20px auto; /* Center the subsection */
+	padding: 20px;
+	border: 1px solid #ccc; /* Box border */
+	border-radius: 8px; /* Rounded corners */
+	background-color: #f9f9f9; /* Light background */
+}
+
+.validate {
+	color: lightblue;
+}
