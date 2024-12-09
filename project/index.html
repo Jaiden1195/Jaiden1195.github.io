@@ -6,7 +6,10 @@
 			<title>Home | NovaFlight Dynamics</title>
 			<link rel="stylesheet" href="style.css"> <!-- Code that links the style sheet-->
 			<link rel="icon" href="NOVAFLIGHT-DYNAMICS.png" type="image/x-icon"> <!-- Code that links the icon to the title-->
-
+			<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+			<script src="script.js"></script>
 		</head>
 
 		<body>
@@ -33,6 +36,11 @@
 			</header>
 
 			<main>
+
+	<div id="dialog">
+    <p>Welcome to NovaFlight Dynamics! Explore our innovative aerospace solutions.</p>
+</div>
+<button id="open-dialog">Welcome Message Click Here!</button>
 				<section class="hero"> <!-- Hero section that involves a button that links the user to the learn more page-->
 					<h1 id="First">NovaFlight Dynamics</h1>
 					<p>"Propelling Innovation in Aerospace: Engineered for Tomorrow's Defense."</p>
@@ -43,7 +51,7 @@
 			<footer>
 				
 				<h3>Stay Updated</h3> <!-- This element names the stay updated page -->
-        		<form action="https://formspree.io/f/mbljrvwe" method="POST"> <!-- This is the element that creates the form -->
+        		<form id="contact-form"> <!-- This is the element that creates the form -->
             		<label for="full-name">Name:</label>
             		<input type="text" id="full-name" name="full-name" required placeholder="Enter your full name"> <!-- Fixed ID and name to be consistent -->
             
@@ -52,7 +60,7 @@
             
             		<input type="submit" value="Submit">
         		</form>
-
+        		<script src="script.js"></script>
         		<p class="copy-right">NovaFlight Dynamics &copy; <!-- Fixed &copy; character reference -->
         		</p>
         		

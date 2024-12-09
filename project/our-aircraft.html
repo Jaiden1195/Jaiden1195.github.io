@@ -6,6 +6,7 @@
 			<link rel="stylesheet" href="style.css">
 			<title>Our Aircraft | NovaFlight Dynamics</title>
 			<link rel="icon" href="NOVAFLIGHT-DYNAMICS.png" type="image/x-icon">
+			<script src="script.js"></script>
 		</head>
 
 		<body>
@@ -35,9 +36,20 @@
 			<p id="aircraft-header"> At NovaFlight Dynamics we take pride in our aircraft that is an accurate display of our cutting-edge research, innovations, and development. We manufacture aircraft for both defense and commercial sectors of aerospace, with many features that set our aircraft apart from other manufactureres. As the largest United States contractor, NovaFlight Dynamics is committed to being at the forefront of the future of aerospace engineering</p> <!-- Gives a brief description of aircraft production-->
 
 			<section> <!-- Section for the first aircraft F-28 Falcon-->
-				<h2 id="Falcon">F-28 Falcon</h2> 
-				<div id="F1">
-					<img src="F-28_Falcon.jpg" alt="F-28 Falcon Fighter" width="450" height="450" class="aircraft-image"> <!-- Image of the aircraft-->
+				<h2 id="Falcon">F-28 Falcon</h2>
+				<!--Cycle plug in for Falcon, scrolls horizontally through 2 images.--> 
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+				<script src="https://malsup.github.io/jquery.cycle2.js"></script>
+				<script src="https://malsup.github.io/jquery.cycle2.center.js"></script>
+				<div id="F1"class="cycle-slideshow"
+   					data-cycle-fx="scrollHorz"
+   					data-cycle-pause-on-hover="true"
+   					data-cycle-speed="200"
+   					data-cycle-timeout="2000"
+   					data-cycle-center-horz=true>
+					<img src="F-28_Falcon.jpg" alt="F-28 Falcon Fighter" width="350" height="350" class="aircraft-image"> <!-- Image of the aircraft-->
+					<img src="F_falcon.jpg" alt="Falcon Fighter" width="350" height="350" class="aircraft-image">
+				</div>
 					<aside> <!-- Aside element that aligns the text beside the image-->
 				
 						<p class="planes">The F-28 Falcon is a cutting-edge, stealth air superiority fighter designed for superior maneuverability and advanced combat capabilities. It combines stealth technology with exceptional speed and agility, making it one of the most formidable aircraft in modern air warfare.</p>
@@ -61,8 +73,19 @@
 			</section>
 			<section>
 				<h2 id="Raider">B-1 Raider</h2>
-				<div id="B1">
-					<img src="B1_Raider.jpg" alt="B1 Raider Bomber" width="450" height="450" class="Bomber">
+				<!--Cycle plug in for raider, scrolls horizontally through 2 images.-->
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+				<script src="https://malsup.github.io/jquery.cycle2.js"></script>
+				<script src="https://malsup.github.io/jquery.cycle2.center.js"></script>
+				<div id="B1" class="cycle-slideshow"
+   					data-cycle-fx="scrollHorz"
+   					data-cycle-pause-on-hover="true"
+   					data-cycle-speed="200"
+   					data-cycle-timeout="2000"
+   					data-cycle-center-horz=true>
+					<img src="B1_Raider.jpg" alt="B1 Raider Bomber" width="350" height="350" class="Bomber">
+					<img src="b1_jet.jpg" alt="B1 Raider New Angle" width="350" height="350" class="Bomber">
+				</div>
 					<aside>
 						<p class="planes">The B-1 Raider is a supersonic strategic bomber known for its versatility and advanced capabilities. Designed to penetrate enemy defenses, it combines high speed, long range, and a large payload capacity. The B-1 features variable-sweep wings that enhance maneuverability and reduce drag, making it effective in various mission profiles, from nuclear deterrence to conventional warfare.</p>
 						<div class="specifications">
@@ -85,8 +108,19 @@
 			</section>
 			<section>
 				<h2 id="Globemaster">T-52 Globemaster</h2>
-				<div id="T52">
-					<img src="T52_Globemaster.jpeg" alt="T52 Globemaster" width="450" height="450" class="Transport">
+				<!--Cycle2 Plug in for the Globemaster, scrolls horizontally through 2 images.-->
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+					<script src="https://malsup.github.io/jquery.cycle2.js"></script>
+					<script src="https://malsup.github.io/jquery.cycle2.center.js"></script>
+					<div id="T52" class="cycle-slideshow"
+   					data-cycle-fx="scrollHorz"
+   					data-cycle-pause-on-hover="true"
+   					data-cycle-speed="200"
+   					data-cycle-timeout="2000"
+   					data-cycle-center-horz=true>
+					<img src="T52_Globemaster.jpeg" alt="T52 Globemaster" width="350" height="350" class="Transport">
+					<img src="globemaster.jpg" alt="Globemaster" width="350" height="350" class="Transport">
+				</div>
 					<aside>
 						<p class="planes">The T-52 Globemaster is a large military transport aircraft designed for rapid strategic airlift of troops and cargo to main operating bases or forward operating bases around the world. It is capable of operating from short and austere airfields, making it highly versatile for a range of missions, including oversized cargo transport, medical evacuations, and humanitarian assistance.</p>
 						<div class="specifications">
@@ -108,7 +142,7 @@
 			</main>
 			<footer>
 				<h3>Stay Updated</h3> <!-- This element names the stay updated page -->
-        		<form action="https://formspree.io/f/mbljrvwe" method="POST"> <!-- This is the element that creates the form -->
+        		<form id="contact-form"> <!-- This is the element that creates the form -->
             		<label for="full-name">Name:</label> <!-- Label element attaches a label to the form prior to the input-->
             		<input type="text" id="full-name" name="full-name" required placeholder="Enter your full name"> <!-- Input element for the name of the user -->
             
@@ -117,6 +151,7 @@
             
             		<input type="submit" value="Submit">
         		</form>
+        		<script src="script.js"></script>
 
         		<p class="copy-right">NovaFlight Dynamics &copy; <!-- &copy; uses special characters to form the copyright symbol -->
         		</p>

@@ -199,3 +199,23 @@ footer {
 .validate {
 	color: lightblue;
 }
+
+/* Center the button */
+#open-dialog {
+    display: block;
+    margin: 20px auto; /* Center the button horizontally */
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+#thank-you-message {
+    color: green; /* Choose a color for the success message */
+    font-size: 1.5em; /* Larger text for emphasis */
+    text-align: center; /* Center the message */
+    margin-top: 20px; /* Space from the form */
+}
